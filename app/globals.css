@@ -309,4 +309,18 @@ button[data-slot="button"] {
   5%,20%,25%,40%,45%,60%,65%,80%,85% { width: calc(100% + 8px); }
 }
 
-
+/* Screen utilities (unchanged) */
+@layer utilities {
+  @media (min-width: var(--screen-sm)) {
+    .sm\:custom-padding { padding: var(--padding-default); }
+  }
+  @media (min-width: var(--screen-md)) {
+    .md\:custom-padding { padding: calc(var(--padding-default) * 1.2); }
+  }
+  @media (min-width: var(--screen-lg)) {
+    .lg\:custom-padding { padding: calc(var(--padding-default) * 1.5); }
+  }
+  @media (min-width: var(--screen-xl)) {
+    .xl\:custom-padding { padding: calc(var(--padding-default) * 2); }
+  }
+}
