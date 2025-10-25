@@ -85,7 +85,11 @@ export default function ProjectCarousel({
                   <motion.div
                     key={p.id}
                     className="embla__slide flex-shrink-0"
-                    style={{ minWidth: "360px" }}
+                    style={{
+  minWidth: "70vw",        // mobile: take about 80% of screen width
+  maxWidth: "360px",       // cap width for large screens
+}}
+
                     initial={{ opacity: 0, scale: 0.9, y: 40 }}
                     whileInView={{ opacity: 1, scale: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
@@ -100,12 +104,15 @@ export default function ProjectCarousel({
                       }
                       style={{ pointerEvents: isCenter ? "auto" : "none" }}
                     >
-                      <img
-                        src={p.image}
-                        alt={p.title}
-                        className="w-full h-80 object-cover"
-                      />
-                      <div className="p-7 text-center">
+                     <img
+  src={p.image}
+  alt={p.title}
+  className="w-full h-60 sm:h-64 md:h-72 lg:h-80 object-cover"
+/>
+
+
+                      <div className="p-4 sm:p-6 lg:p-7 text-center">
+
                         <h3 className="text-lg font-bold text-[#1a1a33]">{p.title}</h3>
                         <p className="text-sm text-gray-600 mt-1">{p.desc}</p>
                         <div className="flex justify-center gap-2 mt-3 flex-wrap">

@@ -169,6 +169,11 @@
 html {
   scroll-behavior: smooth;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 
 
 /* =====================
@@ -302,7 +307,7 @@ button[data-slot="button"] {
   21%, 40% { content: "Web Developer"; }
   41%, 60% { content: "Frontend Designer"; }
   61%, 80% { content: "Web Developer"; }
-  81%, 100% { content: "Frontend Designer and Web Developer"; }
+  81%, 100% { content: "Designer & Developer"; }
 }
 @keyframes typing {
   10%,15%,30%,35%,50%,55%,70%,75%,90%,95% { width: 0; }

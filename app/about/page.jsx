@@ -133,7 +133,7 @@ const About = () => {
   </div>
 
   {/* Animated Skill Cards */}
-  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 place-items-center">
+  <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-8 place-items-center">
     {[
       { name: "React Developer", icon: SiReact },
       { name: "Web Designer", icon: SiTailwindcss },
@@ -176,8 +176,17 @@ const About = () => {
           transition={{ type: "spring", stiffness: 300, damping: 12 }}
           onMouseEnter={() => setUserInteracted(true)}
           onMouseLeave={() => setUserInteracted(false)}
-          className="relative group w-[180px] h-[220px] rounded-[30px] flex flex-col items-center justify-center bg-[#f5f5f5] overflow-hidden shadow-md hover:shadow-xl cursor-pointer"
-        >
+          className="
+  relative group
+  w-[100px] h-[130px]         /* base: small for mobile */
+  sm:w-[150px] sm:h-[190px]   /* small-medium screens */
+  lg:w-[180px] lg:h-[220px]   /* large screens */
+  rounded-[20px] sm:rounded-[25px] lg:rounded-[30px]
+  flex flex-col items-center justify-center
+  bg-[#f5f5f5] overflow-hidden
+  shadow-md hover:shadow-xl cursor-pointer
+"
+>
           {/* Fill animation bar */}
           <motion.div
             className="absolute bottom-0 left-0 w-full bg-[#ff7a14] z-0"
@@ -187,7 +196,7 @@ const About = () => {
 
           {/* Icon (slow bounce loop) */}
           <motion.div
-            className="z-10 text-6xl text-[#1a1a33] group-hover:text-gray-600"
+             className="z-10 text-3xl sm:text-5xl lg:text-6xl text-[#1a1a33] group-hover:text-gray-600"
             animate={{ y: [0, -5, 0] }}
             transition={{
               duration: 1.5,

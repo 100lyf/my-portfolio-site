@@ -15,13 +15,13 @@ export default function Home() {
       {/* Hero Section */}
       <motion.section
   id="home"
-  className="w-screen h-full"
+  className="w-full min-h-screen overflow-x-hidden px-4 sm:px-6 lg:px-12"
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 1.1, duration: 0.7, ease: "easeOut" }}
 >
 
-        <div className="container mx-auto h-full">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
           <div className="flex flex-col xl:flex-row items-center justify-between pb-18 xl:pb-48 xl:pt-13 pt-8">
             
             {/* Text */}
@@ -112,15 +112,15 @@ export default function Home() {
       </motion.section>
 
       {/* Other Sections */}
-      <section id="about" className="bg-[#EFE7DC] w-screen h-full">
+      <section id="about" className="bg-[#EFE7DC] w-full min-h-screen overflow-x-hidden px-4 sm:px-6 lg:px-12">
         <About />
       </section>
 
-      <section id="work" className="w-screen h-full">
+      <section id="work" className="w-full min-h-screen overflow-x-hidden px-4 sm:px-6 lg:px-12">
         <Work />
       </section>
 
-      <section id="contact" className="bg-[#EFE7DC] w-screen h-full">
+      <section id="contact" className="bg-[#EFE7DC] w-full min-h-screen overflow-x-hidden px-4 sm:px-6 lg:px-12">
         <Contact />
       </section>
     </main>
