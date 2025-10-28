@@ -27,20 +27,22 @@ const Photo = () => {
           }}
           className="relative w-full h-full"
         >
-          {/* Portrait */}
-          <div className="absolute inset-0 mix-blend-lighten">
-            <Image
-              src="/images/me.png"
-              alt="Portrait of Ada"
-              fill
-              priority
-              className="object-cover rounded-full border-4 border-accent shadow-[0_0_50px_var(--accent-glow)] grayscale-[0.2] contrast-[1.1]"
-              sizes="(max-width: 768px) 298px, 498px"
-            />
-          </div>
+ {/* Portrait */}
+<div className="absolute inset-0">
+  <Image
+    src="/images/me2.png"
+    alt="Portrait of Ada"
+    fill
+    priority
+    className="object-cover rounded-full shadow-[0_0_100px_40px_var(--accent-glow)] grayscale-[0.2] contrast-[1.1]"
+    sizes="(max-width: 768px) 298px, 498px"
+  />
+</div>
 
-          {/* Soft glow background */}
-          <div className="absolute inset-0 rounded-full bg-gradient-to-t from-accent/30 to-transparent blur-2xl -z-10" />
+{/* Intense glow */}
+<div className="absolute inset-0 rounded-full bg-[var(--accent-glow)] blur-[100px] opacity-90 scale-110 -z-10" />
+<div className="absolute inset-0 rounded-full bg-[var(--accent-glow)] blur-[140px] opacity-50 scale-125 -z-20" />
+
         </motion.div>
       </motion.div>
     </div>

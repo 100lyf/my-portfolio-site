@@ -86,8 +86,8 @@ export default function ProjectCarousel({
                     key={p.id}
                     className="embla__slide flex-shrink-0"
                     style={{
-  minWidth: "70vw",        // mobile: take about 80% of screen width
-  maxWidth: "360px",       // cap width for large screens
+  minWidth: "20vw",        // mobile: take about 80% of screen width
+  maxWidth: "70vw",       // cap width for large screens
 }}
 
                     initial={{ opacity: 0, scale: 0.9, y: 40 }}

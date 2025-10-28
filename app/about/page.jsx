@@ -49,7 +49,7 @@ const About = () => {
     className="relative flex items-center justify-center w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] xl:w-[280px] xl:h-[280px]"
   >
     <Image
-      src="/images/me.png"
+      src="/images/me2.png"
       alt="Portrait of Ada"
       fill
       priority
@@ -96,12 +96,11 @@ const About = () => {
   >
     <h2 className="text-3xl font-bold text-[#1a1a33] mb-4">About Me</h2>
     <p className="text-gray-700 leading-relaxed mb-6 max-w-2xl">
-      Hey, I’m Ada — a digital creator who loves turning ideas into interactive
-      experiences. With a background in New Media Design and web development,
-      I’ve worked on everything from sleek websites to motion-driven animations.
-      Whether I’m coding with React, styling with Tailwind, or animating with
-      GSAP and Three.js, I’m always finding ways to mix creativity and logic to
-      tell stories that stand out.
+      Hey, I’m Ada a <strong>Front-End Developer and Web Designer</strong> passionate about creating clean, modern, and high-performing web experiences. I work with <strong>React.js, Next.js, Tailwind CSS,</strong>  and <strong> GSAP</strong> to craft smooth, responsive, and visually consistent websites.
+
+      <br></br>With a background in Digital Media Design, I bring a strong sense of UX/UI, accessibility, and visual storytelling to every project. I’ve developed <strong> WordPress sites for local organizations, React-based company websites,</strong>  and <strong>interactive prototypes</strong>  inspired by real-world brands like Apple.
+
+    <br></br>My approach combines design clarity with <strong> clean code</strong>  to create digital products that look great and perform even better.
     </p>
 
 <a
