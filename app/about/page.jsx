@@ -104,7 +104,7 @@ const About = () => {
     </p>
 
 <a
-  href="/files/Adaugo_CV.pdf"
+  href="/files/Adaugo Oguoma Resume.pdf"
   download
 >
     <Button
